@@ -1,62 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Component</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6V6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
+    <title>Flyrent</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6V6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/gambar/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-    <h1 class="text-center">Berita Terkini</h1>
-    <div class="d-md-flex d-sm-block gap-3 mt-4">
-    <div class="card mb-5" >
-        <img src="1.avif" class="card-img-top" width="200" height="200" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Beli Disini</a>
+
+<body>
+    <div id="home"></div>
+    <div class="navbar d-flex align-items-center border-bottom border-1 border-opacity-50 shadow-sm">
+        <div class="logo d-flex ms-5">
+            <a href="#home"><img src="/gambar/logoatas.png" alt="" class="logos" width="80px;"></a>
+        </div>
+        <div class="nav-links d-flex ms-auto me-5 align-items-center">
+            <a href="#home" class="me-4 text-decoration-none text-dark"><b>Beranda</b></a>
+            <a href="#dronen" class="me-4 text-decoration-none text-dark"><b>Drone</b></a>
+            <a href="#services" class="me-4 text-decoration-none text-dark"><b>Layanan</b></a>
+            <a href="#porto" class="me-4 text-decoration-none text-dark"><b>Galeri</b></a>
+            <a href="#testii" class="me-4 text-decoration-none text-dark"><b>Testimoni</b></a>
+            <a href="#cta" class="btn btn-primary px-4 py-2"><b>Hubungi Kami</b></a>
         </div>
     </div>
-    <div class="card mb-5" >
-        <img src="2.png" class="card-img-top" width="200" height="200" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Beli Disini</a>
+
+    <div class="landing d-flex flex-column" style="gap: 20px; width: 100%;">
+        <div class="kiri">
+            <div class="judul">
+                <h1 class="warna">Sewa Drone</h1>
+                <h1>Terpercaya &<br>Terjangkau</h1>
+                <p class="solusi mt-4 mb-4">Solusi praktis untuk dokumentasi udara berkualitas tinggi. Didukung drone
+                    modern, pilot berpengalaman, dan proses sewa yang cepat, aman, serta transparan.</p>
+            </div>
+            <div class="d-flex mt-1" style="gap: 15px;">
+                <button class="btn btn-primary px-4 py-2 btn-lg"><b>Sewa Sekarang</b></button>
+                <button class="btn btn-outline-dark rounded-pill px-4 py-2 btn-lg"><b>Lihat Drone</b></button>
+            </div>
+        </div>
+        <div class="drone d-flex">
+            <img src="/gambar/carddrone.jpg" class="img-fluid rounded-4 shadow-lg bg-body-tertiary" alt="...">
         </div>
     </div>
-    <div class="card mb-5">
-        <img src="3.jpg" class="card-img-top p-4" width="200" height="200" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Beli Disini</a>
+
+    <div class="memilih text-center">
+        <br>
+        <h2 class="text-center why mb-4"><b>Alasan Klien Memilih Flyrent</b></h2>
+        <div class="d-flex justify-content-around m-auto" style="width:90%; gap: 50px;">
+            <div class="card" style="width: 300px; height: 250px;">
+                <img src="/gambar/moder.png" class="modron" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Drone Modern</b></h5>
+                    <p class="card-text">Hasil foto dan video tajam dengan teknologi terbaru.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 250px;">
+                <img src="/gambar/pro.png" class="prof">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Pilot Berpengalaman</b></h5>
+                    <p class="card-text">Dikendalikan oleh profesional dan terlatih.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 250px;">
+                <img src="/gambar/aman.png" class="cepat" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Cepat dan Aman</b></h5>
+                    <p class="card-text">Proses mudah dengan standar keselamatan tinggi.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 250px;">
+                <img src="/gambar/harga.png" class="harga" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Harga Transparan</b></h5>
+                    <p class="card-text">Biaya jelas tanpa tambahan tersembunyi.</p>
+                </div>
+            </div>
+        </div>
+        <div id="dronen"></div>
+    </div>
+    <section class="section-drone d-flex align-items-center">
+  <div class="container">
+    
+    <!-- Judul -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold dronekami">Daftar Drone Kami</h2>
+      <p class="text-muted">Pilihan drone terbaik untuk kebutuhan Anda</p>
+    </div>
+
+    <!-- Card Grid -->
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card drone-card h-100 shadow-sm">
+          <img src="/gambar/min3.png" class="card-img-top p-3" alt="DJI Mini 3 Pro">
+          <div class="card-body">
+            <h5 class="fw-semibold">DJI Mini 3 Pro</h5>
+            <ul class="list-unstyled small text-muted mb-3">
+              <li>Kamera 48MP</li>
+              <li>Video 4K</li>
+              <li>Waktu terbang 34 menit</li>
+            </ul>
+            <a href="#" class="btn btn-primary"><b>Sewa Sekarang</b></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card drone-card h-100 shadow-sm">
+          <img src="/gambar/2s.png" class="card-img-top p-3" alt="DJI Air 2S">
+          <div class="card-body">
+            <h5 class="fw-semibold">DJI Air 2S</h5>
+            <ul class="list-unstyled small text-muted mb-3">
+              <li>Kamera 20MP</li>
+              <li>Video 4K</li>
+              <li>Waktu terbang 30 menit</li>
+            </ul>
+            <a href="#" class="btn btn-primary"><b>Sewa Sekarang</b></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card drone-card h-100 shadow-sm">
+          <img src="/gambar/mav3.png" class="card-img-top p-3" alt="DJI Mavic 3">
+          <div class="card-body">
+            <h5 class="fw-semibold">DJI Mavic 3</h5>
+            <ul class="list-unstyled small text-muted mb-3">
+              <li>Kamera 20MP</li>
+              <li>Video 5K</li>
+              <li>Waktu terbang 46 menit</li>
+            </ul>
+            <a href="#" class="btn btn-primary"><b>Sewa Sekarang</b></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card drone-card h-100 shadow-sm">
+          <img src="/gambar/avata.png" class="card-img-top p-3" alt="DJI Avata">
+          <div class="card-body">
+            <h5 class="fw-semibold">DJI Avata (FPV)</h5>
+            <ul class="list-unstyled small text-muted mb-3">
+              <li>Kamera 12MP</li>
+              <li>Video 4K</li>
+              <li>Waktu terbang 20 menit</li>
+            </ul>
+            <a href="#" class="btn btn-primary"><b>Sewa Sekarang</b></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <div id="services"></div>
+    <div class="layanan">
+        <h2 class="text-center mb-3 mt-3"><b>Layanan Kami</b></h2>
+        <div class="d-flex flex-column m-auto" style="width:60%; gap: 30px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Dokumentasi Event</b></h5>
+                    <p class="card-text">Abadikan Event dan momen tak terlupakan dari sudut pandang udara.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Video Promosi</b></h5>
+                    <p class="card-text">Video cinematic untuk promosi dan branding.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Foto dan Video Properti</b></h5>
+                    <p class="card-text">Menampilkan properti secara luas dan menarik.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Dokumentasi Proyek</b></h5>
+                    <p class="card-text">Pemantauan progres proyek secara berkala dari udara.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card mb-5">
-        <img src="4.jpeg" class="card-img-top" width="200" height="200" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Beli Disini</a>
+
+    <div id="porto"></div> <br>
+    <div class="galeri">
+        <h2 class="text-center mb-3 mt-5"><b>Galeri</b></h2>
+        <div class="galer d-flex flex-wrap justify-content-around m-auto mb-5" style="width:80%; gap: 20px;">
+            <div class="cardvideo">
+                <div class="card-body">
+                    <video autoplay muted loop palyisline>
+                        <source src="/gambar/event.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardvideo">
+                <div class="card-body">
+                    <video autoplay muted loop palyisline>
+                        <source src="/gambar/promo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardvideo">
+                <div class="card-body">
+                    <video autoplay muted loop palyisline>
+                        <source src="/gambar/properti.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardvideo">
+                <div class="card-body">
+                    <video autoplay muted loop palyisline>
+                        <source src="/gambar/proyek.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="testii"></div>
+            </div>
         </div>
     </div>
-    <div class="card mb-5">
-        <img src="5.webp" class="card-img-top" width="200" height="200" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-primary">Beli Disini</a>
+
+    <div class="memilih testi text-center">
+        <br>
+        <h2 class="text-center mb-2"><b>Testimoni</b></h2><br>
+        <div class="d-flex flex-wrap justify-content-around m-auto" style="width:70%; gap: 50px;">
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Hasil video drone sangat jernih dan professional, prosesnya juga cepat.</p>
+                    <h5 class="card-title"><b>Andi Pratama</b></h5>
+                </div>
+            </div>
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Pelayanan cepat, ramah, hasil video benar-benar memuaskan.</p>
+                    <h5 class="card-title"><b>Rizky Maulana</b></h5>
+                </div>
+            </div>
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Gambar drone rapi, stabil, dan siap kebutuhan profesional.</p><br>
+                    <h5 class="card-title"><b>Dwi Saputra</b></h5>
+                </div>
+            </div>
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Harga terjangkau dengan kualitas drone premium.</p><br>
+                    <h5 class="card-title"><b>Muhammad Fajar</b></h5>
+                </div>
+            </div>
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Hasil video bersih, sudut pengambilan sangat sinematik.</p>
+                    <h5 class="card-title"><b>Ahmad Fauzan</b></h5>
+                </div>
+            </div>
+            <div class="card rounded-5" style="width: 250px; height: 200px;">
+
+                <div class="card-body">
+                    <h1 class="comenlogo">"</h1>
+                    <p class="card-text">Proses mudah, hasil drone melebihi ekspetasi</p><br>
+                    <h5 class="card-title"><b>Bagus Setiawan</b></h5>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
 
+    <div id="cta" class="cta">
+        <div class="d-flex ctain flex-column text-center m-auto">
+            <h2 class="mt-5 mb-4"><b>Siap Mengabadikan Momen Anda?</b></h2>
+            <p class="" style="font-size: 18px;">Sewa drone berkualitas tinggi dengan pilot berpengalaman dan layanan
+                terbaik.</p>
+            <h2 class="mb-4"><b>Hubungi Kami</b></h2>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center m-auto" style="width:80%; gap: 10px;">
+            <div class="card cardf">
+                <div class="card-body">
+                    <img src="/gambar/email.png" style="width: 70px; margin: 30px;" alt="">
+                    <p class="card-text">Flyrentdrone@mail.com</p>
+                </div>
+            </div>
+            <div class="card cardf">
+                <div class="card-body">
+                    <img src="/gambar/wa.png" style="width: 55px; margin: 30px;" alt="">
+                    <p class="card-text">+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="card cardf">
+                <div class="card-body">
+                    <img src="/gambar/alamat.png" style="width: 40px; margin: 27px; margin-top: 32px;" alt="">
+                    <p class="card-text">Jl. Sultan Hasanuddin no 2 - Kab. Pangkep</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div>
+        <div class="d-flex flex-column justify-content-center align-items-center bg-dark text-white"
+            style="height: 100px;">
+            <img src="/gambar/logobawah.png" class="mt-4" style="width: 100px;" alt="">
+            <p class="mt-2">&copy; 2025 Flyrent. All rights reserved.</p>
+        </div>
+
+    </div>
 </body>
+
 </html>

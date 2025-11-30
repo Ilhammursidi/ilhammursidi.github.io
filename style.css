@@ -1,0 +1,191 @@
+:root {
+            --color-grd: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 1000;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            height: auto;
+            
+        }
+
+
+
+        .btn-primary {
+            background: var(--color-grd);
+            border: none;
+        }
+
+        .landing {
+            background-image: url(/gambar/bg.jpg);
+            height: 578px;
+
+        }
+
+        .judul h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .warna {
+            color: rgb(0, 140, 255);
+            ;
+
+        }
+
+        .memilih {
+            background-color: #f8f9fa;
+            height: 400px;
+            width: 100%;
+
+        }
+
+        .why {
+            margin-top: 10px;
+        }
+
+        .solusi {
+            font-size: 20px;
+        }
+
+        .kiri {
+            margin-left: 80px;
+            border: transparent;
+            width: 40%;
+            margin-top: 50px;
+        }
+
+        .drone {
+            margin-top: -420px;
+            margin-left: 750px;
+            width: 400px;
+        }
+
+        .modron {
+            width: 150px;
+            margin: auto;
+            margin-top: 35px;
+        }
+
+        .prof {
+            width: 90px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .cepat {
+            width: 110px;
+            margin: auto;
+            margin-top: 23px;
+        }
+
+        .harga {
+            width: 50px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .dronekami {
+            margin-top: 20px;
+        }
+        .section-drone {
+  min-height: 90vh;
+}
+
+.drone-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.drone-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+.drone-card {
+    border: 3px solid rgba(0, 115, 255, 0.306);
+}
+
+.card-img-top {
+  height: 160px;
+  object-fit: contain;
+}
+
+
+       
+        .list {
+            width: 100%;
+            height: 500px;
+        }
+
+        .layanan {
+            width: 100%;
+            height: 600px;
+            background-color: #f8f9fa;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
+
+        .galer {
+            height: 500px;
+        }
+
+        .galeri h2 {
+            margin-top: 20px;
+        }
+
+        .cardvideo video {
+            width: 400px;
+        }
+
+        .testi {
+            background-color: #f8f9fa;
+            height: 100vh;
+        }
+
+
+        .comenlogo {
+            color: #0d6efd;
+            font-size: 100px;
+            font-family: Demonized;
+            margin-right: 35px;
+            margin-bottom: -55px;
+            margin-top: -20px;
+        }
+
+        .cta {
+            width: 100%;
+            background-image: url(/gambar/bg.jpg);
+            height: 500px;
+        }
+
+        .ctain {
+            width: 50%;
+        }
+
+        .cardf {
+            width: 250px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            border: 2px solid rgb(118, 191, 255);
+            background-color: transparent;
+
+        }
